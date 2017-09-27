@@ -31,7 +31,7 @@ namespace APIChallenge.Controllers
             }
             catch (Exception)
             {
-                this.HttpContext.Response.StatusCode = 404;
+                this.HttpContext.Response.StatusCode = 500;
                 return null;
             }
         }
@@ -51,7 +51,7 @@ namespace APIChallenge.Controllers
             }
             catch (Exception)
             {
-                this.HttpContext.Response.StatusCode = 404;
+                this.HttpContext.Response.StatusCode = 500;
                 return null;
             }
         }
@@ -74,7 +74,7 @@ namespace APIChallenge.Controllers
             }
             catch (Exception)
             {
-                this.HttpContext.Response.StatusCode = 400;
+                this.HttpContext.Response.StatusCode = 500;
             }
         }
 

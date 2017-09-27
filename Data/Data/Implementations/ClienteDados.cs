@@ -30,13 +30,7 @@ namespace APIChallenge
         public Cliente obterClientePorId(long id)
         {
             //Busca um Cliente por seu id
-            try{
-                return dataBase.obterClientePorId(id);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            return dataBase.obterClientePorId(id);
         }
         
         public List<Cliente> obterListaClientes()

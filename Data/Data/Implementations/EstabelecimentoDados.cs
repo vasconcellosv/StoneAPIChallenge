@@ -45,14 +45,7 @@ namespace APIChallenge
 
         public Estabelecimento obterEstabelecimentoPorId(long id)
         {
-            try
-            {
-                return dataBase.obterEstabelecimentoPorId(id);
-            }
-            catch (Exception)
-            {
-                throw new Exception();
-            }
+            return dataBase.obterEstabelecimentoPorId(id);
         }
 
         public List<Estabelecimento> obterListaEstabelecimentos()

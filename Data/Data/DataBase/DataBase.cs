@@ -37,6 +37,10 @@ namespace APIChallenge.Data.Data
             catch (InvalidOperationException)
             {
             }
+            if(lista.Count == 0)
+            {
+                return null;
+            }
             return lista;
         }
 
@@ -50,6 +54,10 @@ namespace APIChallenge.Data.Data
             catch (InvalidOperationException)
             {
             }
+            if (lista.Count == 0)
+            {
+                return null;
+            }
             return lista;
         }
 
@@ -62,6 +70,10 @@ namespace APIChallenge.Data.Data
             }
             catch (InvalidOperationException)
             {
+            }
+            if (lista.Count == 0)
+            {
+                return null;
             }
             return lista;
         }
@@ -159,6 +171,10 @@ namespace APIChallenge.Data.Data
             }
             catch (InvalidOperationException)
             {
+            }
+            if (listStab.Count == 0)
+            {
+                return null;
             }
             return listStab;
         }

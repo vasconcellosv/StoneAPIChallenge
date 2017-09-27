@@ -51,26 +51,12 @@ namespace APIChallenge
 
         public List<Pagamento> obterListaPagamentosPorEstabelecimento(long idEstabelecimento)
         {
-            try
-            {
-                return dataBase.obterListaPagamentosPorEstabelecimento(idEstabelecimento);
-            }
-            catch (Exception)
-            {
-                throw new Exception();
-            }
+            return dataBase.obterListaPagamentosPorEstabelecimento(idEstabelecimento);
         }
 
         public Pagamento obterPagamentoPorId(long id)
         {
-            try
-            {
-                return dataBase.obterPagamentoPorId(id);
-            }
-            catch (Exception)
-            {
-                throw new Exception();
-            }
+            return dataBase.obterPagamentoPorId(id);
         }
 
         public long obterMaxIdPagamento()

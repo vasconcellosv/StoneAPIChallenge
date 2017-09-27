@@ -26,8 +26,15 @@ namespace APIChallenge.Controllers
         [HttpGet]
         public IEnumerable<Estabelecimento> Get()
         {
-            return servicosDeEstabelecimento.obterListaEstabelecimentos();
-        }
+            try { 
+                return servicosDeEstabelecimento.obterListaEstabelecimentos();
+            }
+            catch (Exception)
+            {
+                this.HttpContext.Response.StatusCode = 500;
+                return null;
+            }
+}
 
         // GET establishments/5
         /// <summary>
@@ -38,12 +45,15 @@ namespace APIChallenge.Controllers
         [HttpGet("{id}")]
         public Estabelecimento Get(long id)
         {
-            Estabelecimento estabelecimento = servicosDeEstabelecimento.obterEstabelecimentoPorId(id);
-            if (estabelecimento == null)
+            try
             {
-                this.HttpContext.Response.StatusCode = 418;
+                return servicosDeEstabelecimento.obterEstabelecimentoPorId(id);
             }
-            return estabelecimento;
+            catch (Exception)
+            {
+                this.HttpContext.Response.StatusCode = 500;
+                return null;
+            }
         }
 
         // POST establishments
