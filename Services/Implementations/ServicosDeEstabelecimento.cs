@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Net;
-using Newtonsoft.Json;
 using System;
 using DependencyInjectionSample.Interfaces;
 using DependencyInjectionSample.Models;

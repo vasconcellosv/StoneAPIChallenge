@@ -29,7 +29,6 @@ namespace APIChallenge
 
         public Cliente obterClientePorId(long id)
         {
-            //Busca um Cliente por seu id
             return dataBase.obterClientePorId(id);
         }
         

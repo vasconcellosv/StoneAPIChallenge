@@ -14,17 +14,6 @@ namespace APIChallenge.Data.Data
         {
             this.myContext = myContext;
             this.myContext.Database.EnsureCreated();
-
-            //listaClientes.Add(new Cliente(1, "Nome1", "123", DateTime.Today, "456"));
-            //listaClientes.Add(new Cliente(2, "Nome2", "234", DateTime.Today, "567"));
-            //listaClientes.Add(new Cliente(3, "Nome3", "345", DateTime.Today, "678"));
-            //listaClientes.Add(new Cliente(4, "Nome4", "456", DateTime.Today, "789"));
-            //listaEstabelecimentos.Add(new Estabelecimento(1, "GLOBO COMUNICACAO E PARTICIPACOES S/A", "27.865.757/0001-02", "205-4 - Sociedade Anônima Fechada", "ATIVA"));
-            //listaEstabelecimentos.Add(new Estabelecimento(2, "TVSBT CANAL 4 DE SAO PAULO S/A", "45.039.237/0001-14", "205-4 - Sociedade Anônima Fechada", "ATIVA"));
-            //listaEstabelecimentos.Add(new Estabelecimento(3, "STONE PAGAMENTOS S.A.", "16.501.555/0001-57", "205-4 - Sociedade Anônima Fechada", "ATIVA"));
-            //listaPagamentos.Add(new Pagamento(1, 123.45f, DateTime.Today, 1, 3));
-            //listaPagamentos.Add(new Pagamento(2, 234.56f, DateTime.Today, 2, 3));
-            //listaPagamentos.Add(new Pagamento(3, 345.67f, DateTime.Today, 1, 1));
         }
 
         public List<Cliente> obterListaClientes()

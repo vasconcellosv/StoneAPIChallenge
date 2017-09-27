@@ -1,11 +1,8 @@
-﻿using APIChallenge.Data.Data;
-using DependencyInjectionSample.Data;
+﻿using DependencyInjectionSample.Data;
 using DependencyInjectionSample.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace APIChallenge
 {
@@ -19,7 +16,6 @@ namespace APIChallenge
 
         public void inserirEstabelecimento(Estabelecimento estabelecimento)
         {
-            //Valida se já existe um Estabelecimento com o mesmo id
             try
             {
                 dataBase.inserirEstabelecimento(estabelecimento);
@@ -32,7 +28,6 @@ namespace APIChallenge
 
         public Estabelecimento obterEstabelecimentoPorCnpj(string cnpj)
         {
-            //Busca um Estabelecimento por seu CNPJ
             try
             {
                 return dataBase.obterEstabelecimentoPorCnpj(cnpj);

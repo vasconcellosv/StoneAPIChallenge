@@ -18,7 +18,6 @@ namespace APIChallenge
 
         public void cancelarPagamento(long id)
         {
-            //Valida se existe um pagamento com o id recebido
             try
             {
                 dataBase.apagarPagamento(id);
@@ -31,22 +30,15 @@ namespace APIChallenge
 
         public void inserirPagamento(Pagamento pagamento)
         {
-            //Valida se o Cliente e o Estabelecimento existem e que não exista um Pagamento com o id recebido
-            if (dataBase.obterClientePorId(pagamento.Cliente.Id) != null && dataBase.obterEstabelecimentoPorId(pagamento.Estabelecimento.Id) != null && dataBase.obterPagamentoPorId(pagamento.Id) == null)
-            {
-                try
-                {
-                    dataBase.inserirPagamento(pagamento);
-                }
-                catch (Exception)
-                {
-                    throw new Exception();
-                }
-            }
-            else
-            {
-                throw new Exception();
-            }
+          
+            try
+             {
+                 dataBase.inserirPagamento(pagamento);
+             }
+             catch (Exception)
+             {
+                 throw new Exception();
+             }
         }
 
         public List<Pagamento> obterListaPagamentosPorEstabelecimento(long idEstabelecimento)
