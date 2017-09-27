@@ -32,7 +32,7 @@ namespace APIChallenge
         public void inserirPagamento(Pagamento pagamento)
         {
             //Valida se o Cliente e o Estabelecimento existem e que não exista um Pagamento com o id recebido
-            if (dataBase.obterClientePorId(pagamento.IdCliente) != null && dataBase.obterEstabelecimentoPorId(pagamento.IdEstabelecimento) != null && dataBase.obterPagamentoPorId(pagamento.Id) == null)
+            if (dataBase.obterClientePorId(pagamento.Cliente.Id) != null && dataBase.obterEstabelecimentoPorId(pagamento.Estabelecimento.Id) != null && dataBase.obterPagamentoPorId(pagamento.Id) == null)
             {
                 try
                 {

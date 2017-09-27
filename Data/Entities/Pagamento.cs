@@ -8,18 +8,16 @@ namespace APIChallenge
         private long id;
         private float valor;
         private DateTime data;
-        private long idCliente;
+        private long idCliente {get;set;}
         [ForeignKey("idCliente")]
-        private Cliente cliente { get; set; }
+        public virtual Cliente Cliente { get; set; }
         private long idEstabelecimento;
         [ForeignKey("idEstabelecimento")]
-        private Estabelecimento estabelecimento { get; set; }
+        public virtual Estabelecimento Estabelecimento { get; set; }
 
         public long Id { get => id; set => id = value; }
         public float Valor { get => valor; set => valor = value; }
         public DateTime Data { get => data; set => data = value; }
-        public long IdCliente { get => idCliente; set => idCliente = value; }
-        public long IdEstabelecimento { get => idEstabelecimento; set => idEstabelecimento = value; }
 
         public Pagamento(long id, float valor, DateTime data, long idCliente, long idEstabelecimento)
         {

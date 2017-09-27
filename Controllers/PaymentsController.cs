@@ -25,7 +25,15 @@ namespace APIChallenge.Controllers
         [HttpGet("{id}")]
         public IEnumerable<Pagamento> Get(long id)
         {
-            return servicosDePagamento.obterListaPagamentosPorEstabelecimento(id);
+            try
+            {
+                return servicosDePagamento.obterListaPagamentosPorEstabelecimento(id);
+            }
+            catch (Exception)
+            {
+                this.HttpContext.Response.StatusCode = 500;
+                return null;
+            }
         }
 
         // GET payments/5

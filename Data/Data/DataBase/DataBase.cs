@@ -155,7 +155,7 @@ namespace APIChallenge.Data.Data
             List<Pagamento> listStab = null;
             try
             {
-                listStab = this.myContext.Pagamentos.Where(x => x.IdEstabelecimento.Equals(idEstabelecimento)).ToList();
+                listStab = this.myContext.Pagamentos.Where(x => x.Estabelecimento.Id.Equals(idEstabelecimento)).ToList();
             }
             catch (InvalidOperationException)
             {
