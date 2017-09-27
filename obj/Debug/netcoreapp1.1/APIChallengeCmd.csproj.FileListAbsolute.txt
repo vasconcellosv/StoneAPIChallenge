@@ -1,0 +1,10 @@
+C:\Users\vinic\source\repos\APIChallengeCmd\bin\Debug\netcoreapp1.1\APIChallengeCmd.deps.json
+C:\Users\vinic\source\repos\APIChallengeCmd\bin\Debug\netcoreapp1.1\APIChallengeCmd.runtimeconfig.json
+C:\Users\vinic\source\repos\APIChallengeCmd\bin\Debug\netcoreapp1.1\APIChallengeCmd.runtimeconfig.dev.json
+C:\Users\vinic\source\repos\APIChallengeCmd\bin\Debug\netcoreapp1.1\APIChallengeCmd.dll
+C:\Users\vinic\source\repos\APIChallengeCmd\bin\Debug\netcoreapp1.1\APIChallengeCmd.pdb
+C:\Users\vinic\source\repos\APIChallengeCmd\obj\Debug\netcoreapp1.1\APIChallengeCmd.csproj.CoreCompileInputs.cache
+C:\Users\vinic\source\repos\APIChallengeCmd\obj\Debug\netcoreapp1.1\APIChallengeCmd.AssemblyInfo.cs
+C:\Users\vinic\source\repos\APIChallengeCmd\obj\Debug\netcoreapp1.1\APIChallengeCmd.dll
+C:\Users\vinic\source\repos\APIChallengeCmd\obj\Debug\netcoreapp1.1\APIChallengeCmd.pdb
+C:\Users\vinic\source\repos\APIChallengeCmd\obj\Debug\netcoreapp1.1\APIChallengeCmd.csprojResolveAssemblyReference.cache
