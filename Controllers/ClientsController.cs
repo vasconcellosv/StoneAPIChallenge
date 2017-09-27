@@ -77,19 +77,5 @@ namespace APIChallenge.Controllers
                 this.HttpContext.Response.StatusCode = 500;
             }
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(long id, [FromBody]Cliente cliente)
-        {
-            //servicosDeClientes.atualizarCliente(id, cliente);
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(long id)
-        {
-            //servicosDeClientes.apagarCliente(id);
-        }
     }
 }
