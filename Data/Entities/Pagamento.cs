@@ -29,5 +29,8 @@ namespace APIChallenge
             this.idCliente = idCliente;
             this.idEstabelecimento = idEstabelecimento;
         }
+        public Pagamento()
+        {
+        }
     }
 }

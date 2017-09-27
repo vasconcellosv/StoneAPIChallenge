@@ -26,5 +26,8 @@ namespace APIChallenge
             this.natureza_juridica = natureza_juridica;
             this.situacao = situacao;
         }
+        public Estabelecimento()
+        {
+        }
     }
 }
